@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-pagina-inicial',
   imports: [],
   templateUrl: './pagina-inicial.component.html',
-  styleUrl: './pagina-inicial.component.css'
+  styleUrls: ['./pagina-inicial.component.css']
 })
 export class PaginaInicialComponent {
 
