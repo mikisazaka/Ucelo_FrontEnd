@@ -6,7 +6,8 @@
     <!-- Card de Login -->
     <div class="relative z-10 bg-[#F0F0F0] bg-opacity-90 p-8 rounded-xl shadow-lg w-xl max-w-md">
         <div>
-            <img src="assets/vire-a-esquerda.png" alt="Voltar" class="w-4 h-4 absolute top-4 left-4 cursor-pointer" (click)="goBack()">
+            <img src="assets/vire-a-esquerda.png" alt="Voltar" class="w-4 h-4 absolute top-4 left-4 cursor-pointer"
+                (click)="goBack()">
         </div>
         <img src="assets/LOGO.png" alt="Logo Ucelo" class="mx-auto mb-4 w-20 h-20">
         <h2 class="anton-font text-[#002E5E] text-4xl font-extrabold mb-6 text-center">Login</h2>
@@ -58,4 +59,12 @@
             </a>
         </div>
     </div>
-    <router-outlet></router-outlet>
+
+<div>
+    <app-side-nav [isExpanded]="menuAberto" [userType]="tipoUsuario" 
+    (toggleMenu)="menuAberto = !menuAberto"></app-side-nav>
+
+    <div class="content-container" [class.expanded]="menuAberto">
+        <router-outlet></router-outlet>
+    </div>
+</div>
