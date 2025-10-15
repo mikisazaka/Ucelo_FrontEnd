@@ -14,7 +14,7 @@ import { SideNavComponent } from '../../../layout/side-nav/side-nav.component';
 export class LoginComponent {
 
   menuAberto = false;
-  tipoUsuario: 'cliente' | 'funcionario' = 'cliente'; // pode vir do login
+  tipoUsuario: 'cliente' | 'funcionario' = 'cliente';
 
   constructor(private router: Router) {}
 
