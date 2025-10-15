@@ -47,7 +47,7 @@
             </a>
         </div>
         <div class="mt-6 justify-center flex">
-            <button routerLink="/dashboard"
+            <button routerLink="/tabela-comparacao"
                 class="w-32 abel-font text-xl bg-[#002E5E] cursor-pointer font-bold py-2 px-8 rounded-full border-2 text-white hover:bg-white hover:border-[#002E5E] hover:text-[#002E5E] transition duration-300">
                 Entrar
             </button>
@@ -59,12 +59,3 @@
             </a>
         </div>
     </div>
-
-<div>
-    <app-side-nav [isExpanded]="menuAberto" [userType]="tipoUsuario" 
-    (toggleMenu)="menuAberto = !menuAberto"></app-side-nav>
-
-    <div class="content-container" [class.expanded]="menuAberto">
-        <router-outlet></router-outlet>
-    </div>
-</div>

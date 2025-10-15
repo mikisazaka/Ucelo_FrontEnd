@@ -1,0 +1,29 @@
+<div class="min-h-screen relative flex items-center justify-center bg-[#002E5E]">
+  <img src="assets/Círculos.png" alt="background-image" class="absolute inset-0 w-full h-full object-cover">
+
+  <div class="relative z-10 bg-[#F0F0F0] bg-opacity-90 p-8 rounded-xl shadow-lg w-[500px] h-[500px] my-8 flex flex-col justify-between">
+
+    <div class="flex items-center gap-4 mb-4">
+      <h2 class="anton-font text-[#002E5E] text-3xl font-extrabold leading-tight text-center">
+        CADASTRO REALIZADO COM SUCESSO!
+      </h2>
+    </div>
+
+    <div class="flex flex-col justify-center items-center flex-grow text-center px-4">
+      <p class="abel-font mb-2">O formulário de autocadastro foi enviado com sucesso!</p>
+      <p class="abel-font">
+        Um funcionário Ucelo logo aprovará sua conta e você poderá ter acesso às páginas de auxílio ao cliente!
+      </p>
+    </div>
+
+    <div class="flex justify-center mt-6">
+      <button routerLink="/ucelo"
+        class="abel-font text-lg bg-[#002E5E] cursor-pointer font-bold py-2 px-10 rounded-full border-2 text-white 
+               hover:bg-white hover:border-[#002E5E] hover:text-[#002E5E] transition duration-300">
+        Retornar ao início
+      </button>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

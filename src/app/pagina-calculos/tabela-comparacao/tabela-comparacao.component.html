@@ -1,1 +1,9 @@
 <p>tabela-comparacao works!</p>
+<div>
+    <app-side-nav [isExpanded]="menuAberto" [userType]="tipoUsuario" 
+    (toggleMenu)="menuAberto = !menuAberto"></app-side-nav>
+
+    <div class="content-container" [class.expanded]="menuAberto">
+        <router-outlet></router-outlet>
+    </div>
+</div>

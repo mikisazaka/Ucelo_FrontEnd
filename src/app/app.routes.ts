@@ -9,6 +9,7 @@ import { GeracaoPdfComponent } from './pagina-calculos/geracao-pdf/geracao-pdf.c
 import { SolicitacaoCadastroComponent } from './pagina-administrador/solicitacao-cadastro/solicitacao-cadastro.component';
 import { UsuariosComponent } from './pagina-administrador/usuarios/usuarios.component';
 import { LogoutComponent } from './pagina-site/logout/logout.component';
+import { CadastroEnviadoComponent } from './pagina-site/cadastro-enviado/cadastro-enviado.component';
 
 export const routes: Routes = [
 
@@ -60,6 +61,11 @@ export const routes: Routes = [
     {
         path: 'logout',
         component: LogoutComponent
+    },
+
+    {
+        path: 'cadastro-enviado',
+        component: CadastroEnviadoComponent
     },
 
     { 
